@@ -3,6 +3,7 @@ go 1.12
 module github.com/cri-o/cri-o
 
 require (
+	github.com/14rcole/gopopulate v0.0.0-20180821133914-b175b219e774 // indirect
 	github.com/BurntSushi/toml v0.3.1
 	github.com/Microsoft/go-winio v0.4.12
 	github.com/blang/semver v3.5.1+incompatible
@@ -22,6 +23,7 @@ require (
 	github.com/cri-o/ocicni v0.1.1-0.20190423014352-8a4ca077a093
 	github.com/docker/docker v0.7.3-0.20190410184157-6d18c6a06295
 	github.com/docker/go-units v0.4.0
+	github.com/elazarl/goproxy/ext v0.0.0-20190711103511-473e67f1d7d2 // indirect
 	github.com/fsnotify/fsnotify v1.4.7
 	github.com/go-zoo/bone v1.3.0
 	github.com/godbus/dbus v0.0.0-20181101234600-2ff6f7ffd60f
@@ -58,6 +60,8 @@ require (
 	k8s.io/kubernetes v0.0.0
 	k8s.io/utils v0.0.0-20190607212802-c55fbcfc754a
 )
+
+replace github.com/containers/storage => github.com/diamanticom/storage v1.12.12
 
 replace (
 	github.com/opencontainers/runtime-spec => github.com/opencontainers/runtime-spec v0.1.2-0.20190408193819-a1b50f621a48
